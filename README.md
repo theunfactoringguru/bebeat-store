@@ -18,7 +18,7 @@ This project is called Bebeat store: its supposed to emulate a simple site like 
   - Back-End (Express + Mongo):
     - DB Model:
       - ```json
-        {
+        "Artist" : {
             "docName": "Artist",
             "data": {
                 "artistName": "String",
@@ -26,7 +26,7 @@ This project is called Bebeat store: its supposed to emulate a simple site like 
                 "beats": ["Ref(Beat)"]
             }
         },
-        {
+        "Beat" : {
             "docName": "Beat",
             "data": {
                 "beatPlaylistName": "String",
@@ -35,7 +35,7 @@ This project is called Bebeat store: its supposed to emulate a simple site like 
                 "url": "String" //Digital Ocean Spaces url (.zip file)
             }
         },
-        {
+        "ShoppingCart" : {
             "docName": "ShoppingCart",
             "data": {
               "products": ["Ref(Beats)"]
