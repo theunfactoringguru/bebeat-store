@@ -46,4 +46,7 @@ This project is called Bebeat store: its supposed to emulate a simple site like 
         - Express Routing
         - Mongoose ORM
         - Mongo Atlas for DB Hosting
-        
+        - Digital Ocean Spaces for Storing beatPlaylistName.zip file
+- **Future: V0.1.0**:
+  - Back-End (Express + Mongo)
+    - Compress Song Files programatically
