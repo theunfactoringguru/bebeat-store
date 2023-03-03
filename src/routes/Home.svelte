@@ -7,6 +7,7 @@
 
 <style>
   * {
+    margin-top: 5rem;
     padding-left: 10rem;
     padding-right: 10rem;
   }

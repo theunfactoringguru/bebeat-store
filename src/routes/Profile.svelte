@@ -12,7 +12,7 @@
   }
 </script>
 
-<img src="profile.jpg" width="8%" alt="Profile Image">
+<img src="profile.jpg" width="8%" alt="Profile Image"/>
 <div>
   <h3>{user.artistName}</h3>
   {#each user.beats as beat}
@@ -27,7 +27,12 @@
 
 <style>
   * {
+    margin-top: 5rem;
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  img {
+    border-radius: 10px;
   }
 </style>
