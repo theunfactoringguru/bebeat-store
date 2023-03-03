@@ -1,7 +1,13 @@
 <script>
-  import Navbar from "./lib/Navbar.svelte";
-  import Home from "./lib/Home.svelte";
+  import Navbar from "./routes/Navbar.svelte";
+  import {Route, Router} from "svelte-routing";
+  import Home from "./routes/Home.svelte";
+  import Profile from "./routes/Profile.svelte";
 </script>
 
-<Navbar/>
-<Home/>
+
+<Router>
+  <Navbar/>
+  <Route path="/"><Home/></Route>
+  <Route path="profile"><Profile/></Route>
+</Router>

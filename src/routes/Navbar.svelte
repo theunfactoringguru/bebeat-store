@@ -62,9 +62,7 @@
     display: flex;
     justify-content: space-between;
     background-color: darkblue;
-    padding: 1.5rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding: 1.5rem 10rem;
   }
 
   .navbar > form input[type="text"] {
