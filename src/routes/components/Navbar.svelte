@@ -1,6 +1,6 @@
 <script>
-  import LogInModal from "./components/LogInModal.svelte";
-  import SignUpModal from "./components/SignUpModal.svelte";
+  import LogInModal from "./LogInModal.svelte";
+  import SignUpModal from "./SignUpModal.svelte";
 
   let showLoginModal = false;
   let showSignupModal = false;
@@ -12,13 +12,17 @@
       <input type="text" placeholder="Search for artist or kit name..." />
       <input type="submit" value="Search" />
     </form>
-    <div class="account-buttons">    
+    <div class="action-buttons">
       <button on:click={() => {showSignupModal = true}}>
         Sign Up
       </button>
       <span> | </span>
       <button on:click={() => {showLoginModal = true}}>
         Log In
+      </button>
+      <span> | </span>
+      <button>
+        Cart
       </button>
     </div>
   </div>
@@ -95,14 +99,14 @@
     padding: 0;
   }
   
-  .account-buttons > button{
+  .action-buttons > button{
     background-color: transparent;
     border: 0;
     font-size: 1em;
     color: aliceblue;
   }
   
-  .account-buttons > button:hover {
+  .action-buttons > button:hover {
     cursor: pointer;
   }
 

@@ -1,5 +1,5 @@
 <script>
-  import Navbar from "./routes/Navbar.svelte";
+  import Navbar from "./routes/components/Navbar.svelte";
   import {Route, Router} from "svelte-routing";
   import Home from "./routes/Home.svelte";
   import Profile from "./routes/Profile.svelte";

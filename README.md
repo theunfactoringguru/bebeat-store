@@ -35,11 +35,12 @@ This project is called Bebeat store: its supposed to emulate a simple site like 
                 "url": "String" //Digital Ocean Spaces url (.zip file)
             }
         },
-        "ShoppingCart" : {
-            "docName": "ShoppingCart",
+        "Order" : {
+            "docName": "Order",
             "data": {
-              "products": ["Ref(Beats)"]
-              "totalPrice": "Number" //sum of products.price
+              "products": ["Ref(Beats)"],
+              "totalPrice": "Number", //sum of products.price
+              "createdAt": "Date"
             }
         }
         ```
@@ -49,4 +50,4 @@ This project is called Bebeat store: its supposed to emulate a simple site like 
         - Digital Ocean Spaces for Storing beatPlaylistName.zip file
 - **Future: V0.1.0**:
   - Back-End (Express + Mongo)
-    - Compress Song Files programatically
+    - Compress Song Files programmatically

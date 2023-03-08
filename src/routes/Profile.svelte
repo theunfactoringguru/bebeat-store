@@ -42,6 +42,8 @@
         {#each Array(songAmount) as _, i}
           <input type="text" placeholder="Song name..."/>
         {/each}
+        <input accept="application/zip,application/rar" type="file" placeholder="Upload beat.."/>
+        <input type="submit" value="Add New Beat"/>
       </form>
     </div>
   </BeatUploadModal>
